@@ -1,0 +1,16 @@
+_PatchDB.zip
+_GraphLogs.zip
+joern
+_PatchDB
+_GraphLogs
+_files
+_data
+_testdata
+configs/codebert-base/pytorch_model.bin
+configs/codebert-cpp/pytorch_model.bin
+models/
+logs/
+__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__

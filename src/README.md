@@ -1,41 +1,15 @@
 # Paimon
-[Reserved|Keep Private] Paimon: Patch Identification Monster
-
-## 0. Introduction
-
-`Paimon` is an extended version of `GraphSPD` [1], which is a graph-based security patch detection program.
-
-Compared with the `GraphSPD`, `Paimon` makes the following changes:
-
-* multiple bug fixes, better modular design, and more diverse changable arguments (see [args.py](./args.py)).
-* new (statement) node alignment and graph merging algorithm with less overhead and faster speed.
-* accelarate graph slicing with a reconstructed algorithm, based on graph theory and matrix operations. 
-* generated the node embeddings with advanced methods, e.g., CodeBERT.
-* updated the default hyper-parameters of graph learning models.
-
-Citation: 
-
-[1] Shu Wang, Xinda Wang, Kun Sun, Sushil Jajodia, Haining Wang, and Qi Li, “*GraphSPD: Graph-Based Security Patch Detection with Enriched Code Semantics*,” 2023 44th IEEE Symposium on Security and Privacy (S&P 2023), San Francisco, CA, US, 2023, pp. 604-621. doi: 10.1109/SP46215.2023.00035
+[Reserved|Keep Private] Paimon: <u>Pa</u>tch <u>I</u>dentification <u>Mon</u>ster
+* Notes: This is the instruction of old-version Paimon.
 
 ## 1. Dependencies
-
-`Paimon` can run on the `conda` environment by the following setup. The environment is based on GPU with `cuda 11.7`.
 
 ```bash
 $ conda create -n paimon python=3.9
 $ conda activate paimon
-$ conda install numpy scipy transformers
 $ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 $ conda install pyg -c pyg
-```
-
-If using `pip`, execute the following commands.
-
-```bash
-$ pip install numpy scipy transformers
-$ pip install torch torchvision torchaudio
-$ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv torch_geometric -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
-
+$ conda install transformer
 ```
 
 ## 2. Data Preprocessing
@@ -173,6 +147,16 @@ The `edgeIndex`, `edgeAttr`, `nodeAttr` uses the `0` and `1` suffix to indicate 
 ```
 
 ## 3. Model Training.
+
+Perform Patch-GNN:
+
+```bash
+python src/gnn_patch.py
+```
+or Twin-GNN:
+```bash
+python src/gnn_twin.py
+```
 
 ## A. Standard Formats
 

@@ -1,0 +1,7 @@
+nginx,nginx,fc785b12,0
+nginx,nginx,dac90a4b,1
+nginx,nginx,661e4086,1
+nginx,nginx,4c5a49ce,0
+nginx,nginx,56f53316,0
+nginx,nginx,bd7dad5b,1
+nginx,nginx,02cca547,0

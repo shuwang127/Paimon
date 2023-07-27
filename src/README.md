@@ -1,5 +1,5 @@
 # Paimon
-[Reserved|Keep Private] Paimon: <u>Pa</u>tch <u>I</u>dentification <u>Mon</u>ster
+Paimon: <u>Pa</u>tch <u>I</u>dentification <u>Mon</u>ster
 * Notes: This is the instruction of old-version Paimon.
 
 ## 1. Dependencies
